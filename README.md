@@ -1,14 +1,19 @@
 # 🚀StreamWorks-Customer-Churn-Analysis
 ## Analyzes customer churn for a video streaming platform using Python, statistical analysis, and machine learning to uncover retention drivers and actionable business insights.
 ### 🎯 Business Goal
-StreamWorks Media is a fast-growing video streaming platform operating in a competitive subscription market. As customer acquisition costs increase, the company aims to reduce customer churn by understanding who is cancelling their subscriptions and why.
-The primary business goal of this project is to identify churn drivers, predict churn risk, and provide data-driven insights that support customer retention strategies.
+StreamWorks Media is a UK-based video streaming platform operating in a highly competitive market alongside global players such as Netflix and Amazon Prime. As customer acquisition costs continue to rise, retaining existing subscribers has become a critical business priority.
+The purpose of this analysis is to understand why customers churn, identify early warning signals, and provide data-driven insights to support targeted retention strategies.
+
+The primary business goals of this project are:
+- Understand churn patterns and customer behaviour
+- Identify factors influencing subscription cancellation
+- Predict churn probability to enable early intervention
+- Analyze revenue impacting behaviors such as watch time and tenure
+
 ### 🧩 Business Problem
-Customer churn directly impacts revenue and long-term growth for subscription-based platforms. Without a clear understanding of churn behaviour, StreamWorks risks losing customers without timely intervention.
-This project addresses the following business problems:
-- Identifying behavioural patterns associated with churn
-- Predicting which users are at high risk of cancelling
-- Understanding how engagement, tenure, and promotions impact retention
+StreamWorks Media faces increasing customer churn, which directly impacts recurring revenue and growth. Without understanding the behavioural and engagement drivers behind churn, retention efforts remain reactive rather than proactive.
+This project aims to use customer data to uncover churn drivers and build predictive models that support smarter, earlier retention decisions.
+
 ### 🗂 Dataset Overview
 The dataset contains anonymized user-level subscription and engagement data, including:
 - Demographics such as age, gender, and country
@@ -29,7 +34,7 @@ This project is designed to support non-technical decision-makers with actionabl
 - Python
 - Pandas and NumPy for data manipulation
 - Matplotlib and Seaborn for visualization
-- Scikit-learn for machine learning models
+- Scikit-learn for machine learning model
 - SciPy for statistical testing
 - Jupyter Notebook for analysis and documentation
 
@@ -42,6 +47,7 @@ The dataset required several preparation steps before analysis:
     - Filling categorical columns with "Unknown"
 - Ensured churn labels were converted into binary format
 - Verified data types and removed inconsistencies
+- The following data cleaning steps were performed:
 <img width="571" height="563" alt="Screenshot 2026-02-06 153402" src="https://github.com/user-attachments/assets/26630a1d-40b9-421e-82ed-894978865129" />
 
 ### 🧠 Feature Engineering Summary
@@ -51,9 +57,9 @@ New features were created to capture customer behaviour better:
 - watch_per_fee_ratio: Engagement value relative to subscription cost
 - heavy_mobile_user: Identifies users who predominantly watch on mobile
 - Encoded categorical variables for modelling
-These features helped improve model interpretability and predictive power.
+These features helped capture user engagement and loyalty more effectively.
 
-### 📈 Key Findings (Statistical Analysis)
+### 📈 Key Findings (i Statistical Analysis)
 Statistical tests were used to validate behavioural differences between churned and retained users:
 - Chi-square tests showed that:
 o	Users who received promotions churned less
@@ -64,6 +70,12 @@ o	Retained users had significantly higher average watch time
 o	Strong negative relationships between churn and both tenure and watch time
 Image placeholder:
 📷 Add boxplot or bar chart comparing churn vs watch time or promotions
+
+### ii Statistical Analysis
+Correlation Analysis
+<img width="1301" height="887" alt="Screenshot 2025-10-21 063004" src="https://github.com/user-attachments/assets/246f81e6-6fea-4317-9cea-f5498d237c0a" />
+The correlation analysis reveals strong relationships between engagement metrics. Watch time and tenure show a strong positive correlation, while watch time has a negative relationship with churn. This indicates that lower engagement is a strong warning signal for cancellation.
+
 <img width="959" height="565" alt="Screenshot 2025-10-21 080407" src="https://github.com/user-attachments/assets/e9a4db45-2f0e-447e-9edc-92d32176ddfd" />
 
 <img width="894" height="645" alt="Screenshot 2025-10-21 080504" src="https://github.com/user-attachments/assets/2326ab77-4518-4022-9f26-c2a066089769" />
@@ -79,14 +91,13 @@ Logistic Regression (Churn Prediction)
 Image placeholder:
 ### 📷 Add ROC curve image here
 <img width="912" height="585" alt="Screenshot 2025-10-21 081155" src="https://github.com/user-attachments/assets/179eafee-5d17-4c36-a19b-971bf0ca89c7" />
-<img width="1301" height="887" alt="Screenshot 2025-10-21 063004" src="https://github.com/user-attachments/assets/246f81e6-6fea-4317-9cea-f5498d237c0a" />
+
 Linear Regression (Tenure Prediction)
 - Used to understand factors affecting customer loyalty
 - Showed that:
 o	Higher watch time increases tenure
 o	Premium subscription users tend to stay longer
 o	Promotions positively impact customer longevity
-Image placeholder:
 
 ### 📷 Add residual plot or predicted vs actual plot here
 <img width="894" height="645" alt="Screenshot 2025-10-21 080504" src="https://github.com/user-attachments/assets/38c55df2-32a2-40ba-a552-ae395664cefc" />
