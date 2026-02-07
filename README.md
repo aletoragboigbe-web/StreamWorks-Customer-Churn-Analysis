@@ -9,6 +9,15 @@
 - [Tools & Technologies](#tools-&-technologies)
 - [Cleaning Summary](#cleaning-summary)
 - [Feature Engineering Summary](#feature-engineering-summary)
+- [Key Findings](#key-findings)
+- [Statistical Analysis](#statistical-analysis)
+- [Predictive Modelling](#predictive-modelling)
+- [Top 3 Predictors of Churn](#top-3-predictors-of-churn)
+- [Linear Regression Tenure Prediction](#Linear-regression-tenure-prediction)
+- [Interpretation of Results](#interpretation-of-results)
+- [Business Questions Answered](#business-questions-answered)
+- [Recommendations](#recommendations)
+- [Key Takeaways](#key-takeaways)
 
   
 ### 🎯Objective
@@ -72,7 +81,7 @@ New features were created to capture customer behaviour better:
 These features helped capture user engagement and loyalty more effectively.
 ---
 
-### 📈Key Findings (i Statistical Analysis)
+### 📈Key Findings
 Statistical tests were used to validate behavioural differences between churned and retained users:
 - Chi-square tests showed that:
 o	Users who received promotions churned less
@@ -83,7 +92,7 @@ o	Retained users had significantly higher average watch time
 o	Strong negative relationships between churn and both tenure and watch time
 
 ---
-### ii Statistical Analysis
+### Statistical Analysis
 Correlation Analysis
 <img width="1301" height="887" alt="Screenshot 2025-10-21 063004" src="https://github.com/user-attachments/assets/246f81e6-6fea-4317-9cea-f5498d237c0a" />
 
@@ -96,7 +105,7 @@ The correlation analysis reveals strong relationships between engagement metrics
 <img width="894" height="645" alt="Screenshot 2025-10-21 080504" src="https://github.com/user-attachments/assets/2326ab77-4518-4022-9f26-c2a066089769" />
 
 ---
-### 🤖 Predictive Modelling Summary
+### 🤖 Predictive Modelling
 Model Results
 Logistic Regression, Churn Prediction
 <img width="912" height="585" alt="Screenshot 2025-10-21 081155" src="https://github.com/user-attachments/assets/179eafee-5d17-4c36-a19b-971bf0ca89c7" />
@@ -105,13 +114,13 @@ The logistic regression model was used to predict customer churn.
 - ROC curve shows good separation between churned and retained users
 - The model is effective at identifying high risk churn customers early
 
-Top 3 Predictors of Churn
+### Top 3 Predictors of Churn
 1.	Watch time, lower watch time increases churn risk
 2.	Tenure, shorter tenure users are more likely to churn
 3.	Promotion status, users without promotions churn more
 These results confirm that engagement and early lifecycle experience drive churn
 
-Linear Regression (Tenure Prediction)
+### Linear Regression Tenure Prediction
 - Used to understand factors affecting customer loyalty
 - Showed that:
   - Higher watch time increases tenure
@@ -144,14 +153,17 @@ Promotions and referrals act as effective retention tools, especially for new us
 - Proactively target low-watch-time users with personalized promotions
 - Focus retention efforts on early lifecycle customers
 - Improve mobile user experience to reduce mobile-driven churn
+  
 ### Data Limitations and Risks
 - Class imbalance between churned and retained users
 - Limited behavioural granularity beyond watch time
 - Potential feature leakage if future information is used
-### 🧠 Key Takeaways 
+  
+### 🧠Key Takeaways 
 - Demonstrates end-to-end data analysis workflow
 - Combines statistics, machine learning, and business reasoning
 - Focuses on real-world subscription and retention challenges
 - Translates technical outputs into business actions
+---
 - Communicates insights clearly to non-technical stakeholders
 
