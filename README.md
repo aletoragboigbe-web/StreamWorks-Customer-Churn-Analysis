@@ -1,5 +1,10 @@
 # 🚀StreamWorks-Customer-Churn-Analysis
 ## Analyzes customer churn for a video streaming platform using Python, statistical analysis, and machine learning to uncover retention drivers and actionable business insights.
+
+### Table of Content
+- [Business Goal](#business-goal)
+
+  
 ### 🎯 Business Goal
 StreamWorks Media is a UK-based video streaming platform operating in a highly competitive market alongside global players such as Netflix and Amazon Prime. As customer acquisition costs continue to rise, retaining existing subscribers has become a critical business priority.
 The purpose of this analysis is to understand why customers churn, identify early warning signals, and provide data-driven insights to support targeted retention strategies.
