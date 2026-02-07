@@ -1,10 +1,14 @@
 # 🚀StreamWorks-Customer-Churn-Analysis
 ## Analyzes customer churn for a video streaming platform using Python, statistical analysis, and machine learning to uncover retention drivers and actionable business insights.
-
 ### Table of Contents
+---
 - [Business Goal](#business-goal)
 - [Business Problem](business-problem)
 - [Dataset Overview](#dataset-overview)
+- [Purpose of the Analysis](#purpose-of-the-analisis)
+- [Tools & Technologies](#tools-&-technologies)
+- [Cleaning Summary](#cleaning-summary)
+- [Feature Engineering Summary](#feature-engineering-summary)
 
   
 ### 🎯 Business Goal
@@ -15,7 +19,7 @@ The primary business goals of this project are:
 - Identify factors influencing subscription cancellation
 - Predict churn probability to enable early intervention
 - Analyze revenue impacting behaviors such as watch time and tenure
-
+---
 ### 🧩 Business Problem
 StreamWorks Media faces increasing customer churn, which directly impacts recurring revenue and growth. Without understanding the behavioural and engagement drivers behind churn, retention efforts remain reactive rather than proactive.This project aims to use customer data to uncover churn drivers and build predictive models that support smarter, earlier retention decisions.
 
@@ -43,7 +47,8 @@ This project is designed to support non-technical decision-makers with actionabl
 - SciPy for statistical testing
 - Jupyter Notebook for analysis and documentation
 
-### 🧹 Data Cleaning Summary
+---
+### 🧹 Cleaning Summary
 The dataset required several preparation steps before analysis:
 - Converted date columns to proper datetime format
 - Created tenure_days from signup and last active dates
@@ -55,6 +60,7 @@ The dataset required several preparation steps before analysis:
 - The following data cleaning steps were performed:
 <img width="571" height="563" alt="Screenshot 2026-02-06 153402" src="https://github.com/user-attachments/assets/26630a1d-40b9-421e-82ed-894978865129" />
 
+---
 ### 🧠 Feature Engineering Summary
 New features were created to capture customer behaviour better:
 - tenure_days: Number of days a user stayed active
@@ -63,6 +69,7 @@ New features were created to capture customer behaviour better:
 - heavy_mobile_user: Identifies users who predominantly watch on mobile
 - Encoded categorical variables for modelling
 These features helped capture user engagement and loyalty more effectively.
+---
 
 ### 📈 Key Findings (i Statistical Analysis)
 Statistical tests were used to validate behavioural differences between churned and retained users:
@@ -74,14 +81,20 @@ o	Retained users had significantly higher average watch time
 - Correlation analysis showed:
 o	Strong negative relationships between churn and both tenure and watch time
 
+---
 ### ii Statistical Analysis
 Correlation Analysis
 <img width="1301" height="887" alt="Screenshot 2025-10-21 063004" src="https://github.com/user-attachments/assets/246f81e6-6fea-4317-9cea-f5498d237c0a" />
+
 The correlation analysis reveals strong relationships between engagement metrics. Watch time and tenure show a strong positive correlation, while watch time has a negative relationship with churn. This indicates that lower engagement is a strong warning signal for cancellation.
 
+---
 <img width="959" height="565" alt="Screenshot 2025-10-21 080407" src="https://github.com/user-attachments/assets/e9a4db45-2f0e-447e-9edc-92d32176ddfd" />
+
+---
 <img width="894" height="645" alt="Screenshot 2025-10-21 080504" src="https://github.com/user-attachments/assets/2326ab77-4518-4022-9f26-c2a066089769" />
 
+---
 ### 🤖 Predictive Modelling Summary
 Model Results
 Logistic Regression, Churn Prediction
@@ -105,9 +118,12 @@ Linear Regression (Tenure Prediction)
   - Promotions positively impact customer longevity
 <img width="894" height="645" alt="Screenshot 2025-10-21 080504" src="https://github.com/user-attachments/assets/38c55df2-32a2-40ba-a552-ae395664cefc" />
 
+---
 ### 📌 Interpretation of Results
 The analysis shows that customer engagement is the strongest driver of retention. Users who watch more content and remain active longer are significantly less likely to churn.
 Promotions and referrals act as effective retention tools, especially for new users. Mobile-heavy users show slightly higher churn risk, suggesting potential experience or usability challenges.
+
+---
 ### 📖 Business Questions Answered
 1.	Do users who receive promotions churn less?
 ### Yes. Promotional offers are associated with lower churn rates.
@@ -122,6 +138,7 @@ Promotions and referrals act as effective retention tools, especially for new us
 6.	What affects watch time or tenure?
 ### Tenure length, promotions, and subscription type.
 
+---
 ### ❗ Recommendations
 - Proactively target low-watch-time users with personalized promotions
 - Focus retention efforts on early lifecycle customers
