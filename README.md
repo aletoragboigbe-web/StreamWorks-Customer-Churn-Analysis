@@ -1,8 +1,9 @@
 # 🚀StreamWorks-Customer-Churn-Analysis
 ## Analyzes customer churn for a video streaming platform using Python, statistical analysis, and machine learning to uncover retention drivers and actionable business insights.
 
-### Table of Content
+### Table of Contents
 - [Business Goal](#business-goal)
+- [Business Problem](business-problem)
 
   
 ### 🎯 Business Goal
