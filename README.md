@@ -164,6 +164,9 @@ Promotions and referrals act as effective retention tools, especially for new us
 - Combines statistics, machine learning, and business reasoning
 - Focuses on real-world subscription and retention challenges
 - Translates technical outputs into business actions
----
 - Communicates insights clearly to non-technical stakeholders
+
+---
+
+
 
