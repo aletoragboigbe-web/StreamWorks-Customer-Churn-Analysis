@@ -2,16 +2,16 @@
 ## Analyzes customer churn for a video streaming platform using Python, statistical analysis, and machine learning to uncover retention drivers and actionable business insights.
 ### Table of Contents
 ---
-- [Business Goal](#business-goal)
-- [Business Problem](business-problem)
-- [Dataset Overview](#dataset-overview)
+- [Objective](#objective)
+- [Business Problems](business-problems)
+- [Data Overview](#data-overview)
 - [Purpose of the Analysis](#purpose-of-the-analisis)
 - [Tools & Technologies](#tools-&-technologies)
 - [Cleaning Summary](#cleaning-summary)
 - [Feature Engineering Summary](#feature-engineering-summary)
 
   
-### 🎯 Business Goal
+### 🎯Objective
 StreamWorks Media is a UK-based video streaming platform operating in a highly competitive market alongside global players such as Netflix and Amazon Prime. As customer acquisition costs continue to rise, retaining existing subscribers has become a critical business priority.The purpose of this analysis is to understand why customers churn, identify early warning signals, and provide data-driven insights to support targeted retention strategies.
 
 The primary business goals of this project are:
@@ -20,10 +20,10 @@ The primary business goals of this project are:
 - Predict churn probability to enable early intervention
 - Analyze revenue impacting behaviors such as watch time and tenure
 ---
-### 🧩 Business Problem
+### 🧩Business Problems
 StreamWorks Media faces increasing customer churn, which directly impacts recurring revenue and growth. Without understanding the behavioural and engagement drivers behind churn, retention efforts remain reactive rather than proactive.This project aims to use customer data to uncover churn drivers and build predictive models that support smarter, earlier retention decisions.
 
-### 🗂 Dataset Overview
+### 🗂Data Overview
 The dataset contains anonymized user-level subscription and engagement data, including:
 - Demographics such as age, gender, and country
 - Subscription details, including plan type and monthly fee
@@ -31,7 +31,8 @@ The dataset contains anonymized user-level subscription and engagement data, inc
 - Marketing indicators such as promotions and referrals
 - Churn indicator showing whether a user cancelled their subscription
 The dataset represents a mix of active and churned users across multiple regions.
-### 🎯 Purpose of the Analysis
+
+### 🎯Purpose of the Analysis
 The purpose of this analysis is to:
 - Explore patterns and behaviours linked to customer churn
 - Quantify the impact of engagement and tenure on churn likelihood
@@ -39,7 +40,7 @@ The purpose of this analysis is to:
 - Translate analytical findings into clear business recommendations
 This project is designed to support non-technical decision-makers with actionable insights.
 
-### 🛠 Tools & Technologies
+### 🛠Tools & Technologies
 - Python
 - Pandas and NumPy for data manipulation
 - Matplotlib and Seaborn for visualization
@@ -48,7 +49,7 @@ This project is designed to support non-technical decision-makers with actionabl
 - Jupyter Notebook for analysis and documentation
 
 ---
-### 🧹 Cleaning Summary
+### 🧹Cleaning Summary
 The dataset required several preparation steps before analysis:
 - Converted date columns to proper datetime format
 - Created tenure_days from signup and last active dates
@@ -61,7 +62,7 @@ The dataset required several preparation steps before analysis:
 <img width="571" height="563" alt="Screenshot 2026-02-06 153402" src="https://github.com/user-attachments/assets/26630a1d-40b9-421e-82ed-894978865129" />
 
 ---
-### 🧠 Feature Engineering Summary
+### 🧠Feature Engineering Summary
 New features were created to capture customer behaviour better:
 - tenure_days: Number of days a user stayed active
 - is_loyal: Flag indicating users with tenure greater than 180 days
@@ -71,7 +72,7 @@ New features were created to capture customer behaviour better:
 These features helped capture user engagement and loyalty more effectively.
 ---
 
-### 📈 Key Findings (i Statistical Analysis)
+### 📈Key Findings (i Statistical Analysis)
 Statistical tests were used to validate behavioural differences between churned and retained users:
 - Chi-square tests showed that:
 o	Users who received promotions churned less
